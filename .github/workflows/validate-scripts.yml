@@ -1,0 +1,165 @@
+name: Validate Scripts
+
+on:
+  push:
+    branches: [ main, develop ]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/validate-scripts.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'scripts/**'
+      - '.github/workflows/validate-scripts.yml'
+
+jobs:
+  shellcheck:
+    runs-on: ubuntu-latest
+    name: Validate shell scripts
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Install shellcheck
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y shellcheck
+        
+    - name: Run shellcheck on all scripts
+      run: |
+        echo "Running shellcheck on all shell scripts..."
+        find scripts -name "*.sh" -type f | while read -r script; do
+          echo "Checking $script"
+          shellcheck "$script" || exit 1
+        done
+        
+    - name: Check script permissions
+      run: |
+        echo "Checking that all scripts are executable..."
+        find scripts -name "*.sh" -type f | while read -r script; do
+          if [[ ! -x "$script" ]]; then
+            echo "ERROR: $script is not executable"
+            exit 1
+          fi
+        done
+        echo "All scripts have correct permissions"
+
+  test-scripts:
+    runs-on: ubuntu-latest
+    name: Test script functionality
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up test environment
+      run: |
+        # Create mock directories
+        mkdir -p "$HOME/Google Drive/SociallyFed/Context/daily-briefs"
+        mkdir -p "$HOME/Google Drive/SociallyFed/Context/implementation-reports"
+        mkdir -p "$HOME/Google Drive/SociallyFed/Context/development-context"
+        
+        # Set environment variables
+        echo "CONTEXT_DIR=$HOME/Google Drive/SociallyFed/Context" >> $GITHUB_ENV
+        echo "PROJECT_DIR=$GITHUB_WORKSPACE" >> $GITHUB_ENV
+        echo "EDITOR=echo" >> $GITHUB_ENV
+        
+    - name: Make scripts executable
+      run: chmod +x scripts/*.sh
+      
+    - name: Test start-dev-session.sh
+      run: |
+        echo "Testing start-dev-session.sh..."
+        ./scripts/start-dev-session.sh
+        
+        # Check if daily brief was created
+        if ! ls "$HOME/Google Drive/SociallyFed/Context/daily-briefs"/daily-brief-*.md; then
+          echo "ERROR: Daily brief was not created"
+          exit 1
+        fi
+        
+    - name: Test provide-context.sh
+      run: |
+        echo "Testing provide-context.sh..."
+        ./scripts/provide-context.sh test-feature
+        
+        # Check if context file was created
+        if [[ ! -f "$HOME/Google Drive/SociallyFed/Context/development-context/DEVELOPMENT_CONTEXT.md" ]]; then
+          echo "ERROR: Development context was not created"
+          exit 1
+        fi
+
+  documentation-check:
+    runs-on: ubuntu-latest
+    name: Validate script documentation
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Check scripts are documented
+      run: |
+        echo "Checking that all scripts are documented in README..."
+        for script in scripts/*.sh; do
+          script_name=$(basename "$script")
+          if ! grep -q "$script_name" scripts/README.md; then
+            echo "ERROR: $script_name is not documented in scripts/README.md"
+            exit 1
+          fi
+        done
+        echo "All scripts are documented"
+        
+    - name: Check for script headers
+      run: |
+        echo "Checking that all scripts have proper headers..."
+        for script in scripts/*.sh; do
+          if ! head -n 5 "$script" | grep -q "# .* - "; then
+            echo "WARNING: $script may not have a proper description header"
+          fi
+        done
+
+  markdown-lint:
+    runs-on: ubuntu-latest
+    name: Lint markdown files
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '20'
+        
+    - name: Install markdownlint-cli
+      run: npm install -g markdownlint-cli
+      
+    - name: Run markdownlint
+      run: |
+        markdownlint '**/*.md' --ignore node_modules --ignore .github || true
+        echo "Markdown linting complete (non-blocking)"
+
+  security-check:
+    runs-on: ubuntu-latest
+    name: Security validation
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Check for hardcoded secrets
+      run: |
+        echo "Checking for potential secrets in scripts..."
+        
+        # Check for common secret patterns
+        if grep -rE "(api_key|apikey|password|passwd|secret|token|jwt)" scripts/ --include="*.sh" | grep -v "^[[:space:]]*#"; then
+          echo "WARNING: Potential secrets found in scripts. Please review."
+        fi
+        
+        # Check for hardcoded paths that might contain sensitive info
+        if grep -rE "/home/[^/]+/.*\.(key|pem|crt|p12)" scripts/ --include="*.sh"; then
+          echo "WARNING: Potential sensitive file paths found."
+        fi
+        
+        echo "Security check complete"

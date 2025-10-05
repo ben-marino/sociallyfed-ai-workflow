@@ -1,0 +1,234 @@
+# Development Context Template
+
+This template provides a structure for aggregating context for Claude Code implementation sessions.
+
+---
+
+# DEVELOPMENT CONTEXT
+
+Generated: [TIMESTAMP]
+Feature Focus: [FEATURE NAME]
+
+---
+
+## Today's Daily Brief
+
+Source: `daily-brief-[DATE].md`
+
+[Include relevant sections from daily brief]
+
+---
+
+## Current Development Plan
+
+Source: `DEVELOPMENT_PLAN_[DATE].md`
+
+### Feature: [Feature Name]
+
+#### Requirements
+- Requirement 1
+- Requirement 2
+- Requirement 3
+
+#### Technical Specifications
+[Include interface definitions, data models, architecture diagrams]
+
+#### Implementation Strategy
+1. Step 1
+2. Step 2
+3. Step 3
+
+#### Success Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Test coverage >= 80%
+
+---
+
+## Recent Implementation Reports
+
+### Report: [TIMESTAMP]
+
+#### Completed
+- Feature implementation
+- Tests written
+- Documentation updated
+
+#### Challenges
+- Challenge faced and resolution
+
+#### Decisions Made
+- Architectural decision and rationale
+
+---
+
+## Project Conventions
+
+### Code Style
+- Naming conventions
+- File organization
+- Import ordering
+
+### Testing Standards
+- Test file naming: `[Feature].test.[ext]`
+- Coverage requirement: 80%
+- Test structure: AAA pattern
+
+### Git Workflow
+- Branch naming: `feature/[ticket-number]-[description]`
+- Commit format: `type: description`
+- PR requirements
+
+### Security Requirements
+- All user data must be encrypted at rest
+- No logging of sensitive information
+- Input validation on all endpoints
+
+---
+
+## Architecture Context
+
+### System Architecture
+[Include relevant architecture diagrams or descriptions]
+
+### Key Design Patterns
+- Repository pattern for data access
+- MediatR for CQRS
+- Dependency injection throughout
+
+### Technology Stack
+- Backend: .NET 8, ASP.NET Core
+- Database: PostgreSQL
+- Caching: Redis
+- Message Queue: RabbitMQ
+
+---
+
+## Current Feature Context
+
+### Feature: [Specific Feature]
+
+#### User Story
+As a [user type], I want [goal] so that [benefit].
+
+#### Acceptance Criteria
+- [ ] Criterion 1
+- [ ] Criterion 2
+- [ ] Criterion 3
+
+#### Technical Requirements
+- Performance: <100ms response time
+- Security: Encrypted data transmission
+- Scalability: Support 1000 concurrent users
+
+#### Related Files
+- `src/Services/[Feature]Service.cs`
+- `src/Controllers/[Feature]Controller.cs`
+- `tests/Services/[Feature]ServiceTests.cs`
+
+---
+
+## Implementation Checklist
+
+### Pre-Implementation
+- [ ] Review specifications
+- [ ] Understand existing code patterns
+- [ ] Plan test scenarios
+
+### Implementation
+- [ ] Write tests first (TDD)
+- [ ] Implement feature
+- [ ] Ensure code coverage
+- [ ] Add documentation
+
+### Post-Implementation
+- [ ] Run all tests
+- [ ] Check code coverage
+- [ ] Update documentation
+- [ ] Create implementation report
+
+---
+
+## Relevant Code Examples
+
+### Service Pattern Example
+```csharp
+public interface IExampleService
+{
+    Task<Result> ProcessAsync(Request request);
+}
+
+public class ExampleService : IExampleService
+{
+    private readonly IRepository _repository;
+    
+    public ExampleService(IRepository repository)
+    {
+        _repository = repository;
+    }
+    
+    public async Task<Result> ProcessAsync(Request request)
+    {
+        // Implementation
+    }
+}
+```
+
+### Test Pattern Example
+```csharp
+public class ExampleServiceTests
+{
+    private readonly IExampleService _sut;
+    private readonly Mock<IRepository> _repositoryMock;
+    
+    public ExampleServiceTests()
+    {
+        _repositoryMock = new Mock<IRepository>();
+        _sut = new ExampleService(_repositoryMock.Object);
+    }
+    
+    [Fact]
+    public async Task ProcessAsync_ValidRequest_ReturnsExpectedResult()
+    {
+        // Arrange
+        var request = new Request { /* ... */ };
+        _repositoryMock.Setup(x => x.GetAsync(It.IsAny<int>()))
+            .ReturnsAsync(new Entity());
+        
+        // Act
+        var result = await _sut.ProcessAsync(request);
+        
+        // Assert
+        Assert.NotNull(result);
+        _repositoryMock.Verify(x => x.GetAsync(It.IsAny<int>()), Times.Once);
+    }
+}
+```
+
+---
+
+## Instructions for Claude Code
+
+1. Read this entire context document carefully
+2. Focus on the specified feature: [FEATURE]
+3. Follow all project conventions listed above
+4. Maintain minimum 80% test coverage
+5. Include comprehensive error handling
+6. Add appropriate logging (without exposing sensitive data)
+7. Update relevant documentation
+
+### Implementation Approach
+- Start with tests (TDD)
+- Use existing patterns from the codebase
+- Keep security and privacy as top priorities
+- Optimize for clarity and maintainability
+
+### Remember
+- SociallyFed is privacy-first - all AI processing must be local
+- User data must be encrypted
+- Performance targets must be met
+- Code should be self-documenting with clear naming
+
+---
+
+*This context was automatically generated by provide-context.sh*
