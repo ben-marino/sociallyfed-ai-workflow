@@ -19,7 +19,7 @@ SociallyFed is a privacy-first personal development application that combines an
 
 Building such a complex AI-integrated application requires sophisticated development practices. This repository documents a multi-AI orchestration workflow that has enabled a solo developer to achieve team-level productivity while maintaining 80%+ test coverage and production-ready code quality.
 
-The workflow orchestrates three AI assistants across two machines (Windows for planning, Ubuntu for development), maintaining persistent context through automated synchronization. This meta-approach - using AI to build an AI-powered product - demonstrates the future of software development where AI augments rather than replaces human developers.
+The workflow orchestrates three AI assistants across two machines (Windows for planning, Ubuntu for development), maintaining persistent context through automated synchronisation. This meta-approach - using AI to build an AI-powered product - demonstrates the future of software development where AI augments rather than replaces human developers.
 
 ## The Application: SociallyFed
 
@@ -27,8 +27,8 @@ The workflow orchestrates three AI assistants across two machines (Windows for p
 
 Modern life presents unique challenges: information overload, social media addiction, loss of self-awareness, and difficulty maintaining personal growth. SociallyFed addresses these challenges through:
 
-- **AI-Guided Journaling**: Personalized prompts based on Stoic philosophy and modern psychology
-- **Pattern Discovery**: Automatic detection of behavioral and emotional patterns
+- **AI-Guided Journaling**: Personalised prompts based on Stoic philosophy and modern psychology
+- **Pattern Discovery**: Automatic detection of behavioural and emotional patterns
 - **The SociallyFed Pyramid**: A framework for healthy digital media consumption
 - **Privacy-First Design**: All AI processing happens locally - your data never leaves your device
 
@@ -37,7 +37,7 @@ Modern life presents unique challenges: information overload, social media addic
 ```
         ┌─────────────────────────────┐
         │    Served Content           │  ← Top (smallest): Passive scrolling,
-        │  (Passive Consumption)      │     algorithmic feeds (minimize)
+        │  (Passive Consumption)      │     algorithmic feeds (minimise)
         ├─────────────────────────────┤
         │    Casual Browsing          │
         ├─────────────────────────────┤
@@ -48,14 +48,14 @@ Modern life presents unique challenges: information overload, social media addic
         │  (Active Engagement)        │
         ├─────────────────────────────┤
         │      Deep Focus             │  ← Base (foundation): Mindful, purposeful
-        │  (Mindful Engagement)       │     engagement (maximize)
+        │  (Mindful Engagement)       │     engagement (maximise)
         └─────────────────────────────┘
 ```
 
 ### Core Features
 
 - **Phase-Adaptive Journaling**: Content evolves as you progress through self-awareness → goal setting → deep dive → maintenance
-- **Mental Model Mapping**: Visualize connections between different aspects of your life
+- **Mental Model Mapping**: Visualise connections between different aspects of your life
 - **Cybernetic Feedback Loops**: Daily micro-loops and weekly macro-loops for continuous improvement
 - **Local LLM Integration**: Privacy-preserving AI analysis using Ollama
 - **Measurable Growth**: Track self-awareness, emotional regulation, and values alignment
@@ -104,13 +104,13 @@ graph LR
 ### Three-AI System Explanation
 
 1. **Senior Claude (Planning & Architecture)**
-   - Runs on Windows machine
+   - Runs on a Windows machine
    - Handles high-level design decisions
    - Creates detailed specifications
    - Maintains project vision and consistency
 
 2. **Claude Code (Implementation)**
-   - Runs on Ubuntu development machine
+   - Runs on a Ubuntu development machine
    - Implements specifications with production-ready code
    - Maintains 80%+ test coverage
    - Handles all coding tasks
@@ -118,29 +118,29 @@ graph LR
 3. **Local Ollama (Production Feature)**
    - Serves dual purpose: development testing AND production feature
    - Processes journal entries for pattern analysis
-   - Categorizes content into SociallyFed Pyramid levels
+   - Categorises content into SociallyFed Pyramid levels
    - Ensures complete privacy (no external API calls)
 
 ### Context Management Strategy
 
-The workflow solves the critical problem of AI context persistence through automated synchronization:
+The workflow solves the critical problem of AI context persistence through automated synchronisation:
 
-- Daily briefs capture current state and priorities
+- Daily briefs capture the current state and priorities
 - Implementation reports document what was built
 - Context templates ensure consistent information transfer
-- Google Drive enables cross-machine synchronization
+- Google Drive enables cross-machine synchronisation
 - Scripts automate the entire process
 
 ## Key Features of the Workflow
 
 ### Multi-AI Orchestration
-- Specialized AI roles (architect vs. implementer)
+- Specialised AI roles (architect vs. implementer)
 - Clear handoffs between planning and coding phases
 - Consistent context maintenance across sessions
 
 ### Automated Context Management
 - Scripts handle all context file operations
-- Automatic timestamping and organization
+- Automatic timestamping and organisation
 - Session state preservation
 - Implementation tracking
 
@@ -152,7 +152,7 @@ The workflow solves the critical problem of AI context persistence through autom
 
 ### Production-Ready Code Generation
 - Test-driven development enforced
-- 80%+ coverage maintained automatically
+- 80%+ coverage is maintained automatically
 - Clean architecture patterns
 - Comprehensive error handling
 
@@ -170,7 +170,7 @@ The workflow solves the critical problem of AI context persistence through autom
    - Windows with Claude Desktop
    - Ubuntu with Claude Code and development tools
 
-2. **Google Drive** installed on both machines
+2. **Google Drive** is installed on both machines
 
 3. **Required software**:
    - Git
@@ -214,7 +214,7 @@ The workflow solves the critical problem of AI context persistence through autom
 2. **Plan with Senior Claude** (Windows):
    - Open the generated daily brief in Claude Desktop
    - Ask: "Review this brief and create a development plan for today"
-   - Save the plan to Context folder
+   - Save the plan to the Context folder
 
 3. **Implement with Claude Code** (Ubuntu):
    ```bash
@@ -292,7 +292,7 @@ The workflow solves the critical problem of AI context persistence through autom
 ### For the Future of Development
 - Demonstrates AI as augmentation, not replacement
 - Shows practical implementation of AI-assisted development
-- Provides reproducible workflow others can adopt
+- Provides a reproducible workflow that others can adopt
 - Opens discussion on AI's role in software engineering
 
 ## Use Cases
@@ -329,7 +329,7 @@ We welcome contributions that enhance the workflow or provide additional example
 2. Create a feature branch
 3. Add your enhancement with documentation
 4. Ensure scripts pass validation
-5. Submit a pull request with clear description
+5. Submit a pull request with a clear description
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) for detailed guidelines.
 
@@ -340,8 +340,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## Acknowledgments
 
 - The Stoic philosophers whose wisdom guides SociallyFed's principles
-- Norbert Wiener and cybernetics pioneers for feedback loop concepts  
-- Cal Newport and digital minimalism advocates for media diet insights
+- Norbert Wiener and the cybernetics pioneers for the feedback loop concepts  
+- Cal Newport and digital minimalism advocate for media diet insights
 - The open-source community for privacy-preserving AI tools
 
 ## Contact
