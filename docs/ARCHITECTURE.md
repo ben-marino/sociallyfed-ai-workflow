@@ -18,7 +18,7 @@ This document covers two interconnected architectures:
 1. **SociallyFed Application Architecture** - The personal development app being built
 2. **Development Workflow Architecture** - The multi-AI system building it
 
-Understanding both provides complete context for this repository. The meta-relationship between them - using AI to build an AI-powered application - demonstrates the sophistication of modern software development.
+Understanding both provides a complete context for this repository. The meta-relationship between them - using AI to build an AI-powered application - demonstrates the sophistication of modern software development.
 
 ---
 
@@ -294,7 +294,7 @@ class OllamaService:
         }
     
     async def categorize_pyramid(self, content: str) -> dict:
-        prompt = f"""Categorize this activity into SociallyFed Pyramid level 1-5:
+        prompt = f"""Categorise this activity into SociallyFed Pyramid level 1-5:
 1=Deep Focus, 2=Creation, 3=Intentional, 4=Casual, 5=Passive
 
 Activity: {content}
@@ -348,7 +348,7 @@ async def analyze_entry(
     return analysis
 
 async def aggregate_patterns(user_id: str, patterns: list):
-    """Aggregate patterns across user's entries"""
+    """Aggregate patterns across users' entries"""
     # Implementation for pattern discovery
     pass
 ```
@@ -378,8 +378,8 @@ sequenceDiagram
     Queue->>AI: Process entry
     AI->>Cache: Check cache
     Cache-->>AI: Cache miss
-    AI->>LLM: Analyze content
-    LLM->>LLM: Categorize pyramid
+    AI->>LLM: Analyse content
+    LLM->>LLM: Categorise pyramid
     LLM->>LLM: Extract emotions
     LLM->>LLM: Detect patterns
     LLM-->>AI: Analysis results
@@ -885,7 +885,7 @@ echo "\"Read DEVELOPMENT_CONTEXT.md and implement the $FEATURE feature\""
 # Communication Protocol: Senior Claude
 
 ## Input Format
-- Daily briefs with current state
+- Daily briefs with the current state
 - Feature requests with requirements
 - Implementation reports for review
 
@@ -904,7 +904,7 @@ echo "\"Read DEVELOPMENT_CONTEXT.md and implement the $FEATURE feature\""
 
 3. Code Review Feedback
    - Architectural improvements
-   - Performance optimizations
+   - Performance optimisations
    - Security considerations
    - Refactoring suggestions
 
@@ -1077,7 +1077,7 @@ graph TD
 ### 2. AI Development Testing Production Cycle
 
 ```python
-# Example: Testing pyramid categorization during development
+# Example: Testing pyramid categorisation during development
 
 class DevelopmentTestingIntegration:
     def __init__(self):
@@ -1085,7 +1085,7 @@ class DevelopmentTestingIntegration:
         self.test_cases = self.load_test_cases()
         
     async def test_pyramid_categorization(self):
-        """Test pyramid categorization during development"""
+        """Test pyramid categorisation during development"""
         results = []
         
         for test_case in self.test_cases:
@@ -1115,7 +1115,7 @@ class DevelopmentTestingIntegration:
         failures = [r for r in results if not r["accurate"]]
         
         prompt = f"""
-The pyramid categorization is achieving {len(failures)/len(results)*100:.1f}% error rate.
+The pyramid categorisation is achieving {len(failures)/len(results)*100:.1f}% error rate.
 
 Failed cases:
 {json.dumps(failures, indent=2)}
@@ -1145,7 +1145,7 @@ sequenceDiagram
     App->>Dev: Analytics
     Dev->>Senior: Performance data
     Senior->>Senior: Architecture refinement
-    Senior->>Code: Optimization spec
+    Senior->>Code: Optimisation spec
 ```
 
 ---
@@ -1342,14 +1342,14 @@ public class MultiLevelCachingService : ICachingService
 #### Database Performance
 
 ```sql
--- Optimized queries with proper indexing
+-- Optimised queries with proper indexing
 CREATE INDEX CONCURRENTLY idx_entries_user_date_pyramid 
 ON journal_entries(user_id, created_at DESC) 
 INCLUDE (pyramid_level, encrypted_content)
 WHERE is_deleted = false;
 
--- Materialized view for metrics
-CREATE MATERIALIZED VIEW user_metrics_daily AS
+-- Materialised view for metrics
+CREATE MATERIALISED VIEW user_metrics_daily AS
 SELECT 
     user_id,
     DATE(created_at) as metric_date,
@@ -1367,7 +1367,7 @@ ON user_metrics_daily(user_id, metric_date);
 CREATE OR REPLACE FUNCTION refresh_user_metrics()
 RETURNS void AS $$
 BEGIN
-    REFRESH MATERIALIZED VIEW CONCURRENTLY user_metrics_daily;
+    REFRESH MATERIALISED VIEW CONCURRENTLY user_metrics_daily;
 END;
 $$ LANGUAGE plpgsql;
 
@@ -1555,7 +1555,7 @@ spec:
    # Custom fine-tuned models
    class CustomModelService:
        async def train_user_specific_model(self, user_id: str):
-           """Train personalized model for better insights"""
+           """Train personalised model for better insights"""
            pass
    ```
 
