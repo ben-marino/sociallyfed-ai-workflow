@@ -65,86 +65,53 @@ Modern research on digital wellness informs our approach:
 The SociallyFed Pyramid reimagines our relationship with digital media, similar to how the food pyramid guides nutritional choices:
 
 ```
-                    ┌─────────────────────────────┐
-                    │      Served Content         │
-                    │   (Passive Consumption)     │  ← Minimize
-                    │                             │
-                    │  • Algorithmic feeds        │
-                    │  • Endless scrolling        │
-                    │  • Recommendation rabbit    │
-                    │    holes                    │
-                    └──────────────┬──────────────┘
-                           ┌──────┴──────┐
-              ┌────────────┤             ├────────────┐
-              │            │   Casual    │            │
-              │            │  Browsing   │            │
-              │            │             │            │
-              │            │ • General   │            │
-              │            │   news      │            │
-              │            │ • Light     │            │
-              │            │   entertainment         │
-              │            └──────┬──────┘            │
-              │             ┌─────┴─────┐             │
-              │     ┌───────┤           ├───────┐     │
-              │     │       │Intentional│       │     │
-              │     │       │  Content  │       │     │
-              │     │       │           │       │     │
-              │     │       │ • Chosen  │       │     │
-              │     │       │   sources │       │     │
-              │     │       │ • Learning│       │     │
-              │     │       │ • Purpose │       │     │
-              │     │       └─────┬─────┘       │     │
-              │     │        ┌────┴────┐        │     │
-              │     │  ┌─────┤         ├─────┐  │     │
-              │     │  │     │ Content │     │  │     │
-              │     │  │     │Creation │     │  │     │
-              │     │  │     │         │     │  │     │
-              │     │  │     │• Writing│     │  │     │
-              │     │  │     │• Making │     │  │     │
-              │     │  │     │• Sharing│     │  │     │
-              │     │  │     └────┬────┘     │  │     │
-              │     │  │     ┌────┴────┐     │  │     │
-              └─────┴──┴─────┤         ├─────┴──┴─────┘
-                             │  Deep   │
-                             │  Focus  │              ← Maximize
-                             │         │
-                             │• Mindful│
-                             │• Present│
-                             │• Purposeful
-                             └─────────┘
+        ┌─────────────────────────────┐
+        │    Served Content           │  ← Top (smallest): Minimize
+        │  (Level 1)                  │
+        ├─────────────────────────────┤
+        │   Connection Building       │
+        │  (Level 2)                  │
+        ├─────────────────────────────┤
+        │   Integrated Activities     │
+        │  (Level 3)                  │
+        ├─────────────────────────────┤
+        │      Sought Content         │  ← Base (foundation): Maximize
+        │  (Level 4)                  │
+        └─────────────────────────────┘
 ```
 
 ### Pyramid Levels Explained
 
-1. **Deep Focus (Foundation)** - The healthiest form of engagement:
-   - Mindful, intentional interaction
-   - Single-tasking with clear purpose
-   - Present-moment awareness
-   - Examples: Writing, deep reading, meaningful conversations, creative work
+1. **Served Content (Top - Minimize)**:
+   - At the tip of the pyramid, like sugar or addictive content in the food pyramid, this should ideally form a small part of Social Media consumption
+   - Studies indicate 'Passive' usage is associated with loneliness and disconnection which is 'served-content' provided by an algorithm
+   - Drawing the parallel that 'Served-content' is much like ultra-processed foods that provide a potentially addictive short-lived high
+   - Users could live on this algorithmically driven 'Served-content' but at a cost to their wellbeing
+   - Examples: "For You" pages, suggested posts and recommendations, auto-playing videos, algorithmic feeds, endless scroll features
+   - Research Impact: Passive consumption of algorithm-served content is associated with increased feelings of loneliness and disconnection; 12.5% of people who were losing sleep reported experiencing hostile abuse
 
-2. **Content Creation** - Active contribution:
-   - Creating rather than consuming
-   - Sharing knowledge or creativity
-   - Building and making
-   - Examples: Blogging, video creation, open source contribution, art
+2. **Connection Building**:
+   - The second layer involves using social media to build and maintain meaningful relationships and communities
+   - This represents the social capital aspect of platforms
+   - The study "Benefits of Facebook 'friends' social capital and college students' use of online social network sites" demonstrated that Facebook was strongest with bridging capital and gives evidence suggesting it provides greater benefits to users suffering with depression and low life satisfaction
+   - Examples: Joining interest-based groups, engaging in meaningful discussions, building professional networks, maintaining friendships, supporting others seeking help
+   - Research Impact: 50% of 'Active' users reported having a community that they value online that supports them; 58% had received support or connection after seeking help; 48% had an online community that values and supports them
 
-3. **Intentional Content** - Purpose-driven consumption:
-   - Consciously chosen sources
-   - Learning and growth focused
-   - Time-boxed engagement
-   - Examples: Educational videos, curated newsletters, skill development
+3. **Integrated Activities**:
+   - This level represents social media use that integrates with and enhances real-life activities and goals
+   - The platform sustains an activity rather than replacing it
+   - The study "Development and validation of a social media use integration scale" demonstrated the benefits of social media when integrated into other activities and life
+   - This can help develop a support network and prevents someone becoming emotionally attached to the platform itself
+   - Examples: Coordinating real-world events, learning new skills through tutorials, supporting hobbies and interests, professional development, fundraising for causes, sports and fitness tracking
+   - Research Impact: Almost 40% of survey respondents had integrated activities on all key components; Users who integrated social media with real-life activities showed significantly higher life satisfaction scores
 
-4. **Casual Browsing** - Light engagement:
-   - General awareness and entertainment
-   - Limited time allocation
-   - Conscious start and stop
-   - Examples: News headlines, light reading, brief social check-ins
-
-5. **Served Content (Peak)** - Minimize this level:
-   - Algorithmic recommendations
-   - Endless feeds and autoplay
-   - Passive, mindless scrolling
-   - Examples: Social media feeds, YouTube recommendations, TikTok FYP
+4. **Sought Content (Foundation - Maximize)**:
+   - Forming the foundation of healthy social media use, this represents content you actively seek out with intention and purpose
+   - This is 'Active' usage associated with positive outcomes
+   - The research "Toward an Integrated and Differential Approach to the Relationships Between Loneliness, Different Types of Facebook Use, and Adolescents Depressed Mood" profiled that active users got better over time as opposed to passive users
+   - Active usage of 'Sought Content' and posting is associated with positive outcomes
+   - Examples: Searching for specific information, following curated educational content, creating and sharing meaningful content, engaging with chosen communities, having meaningful conversations
+   - Research Impact: 73.5% of respondents had found positive or helpful content; Active usage predicts subjective well-being by creating social capital and stimulating feelings of social connectedness; Those who used the platform in an 'active' manner got better over time
 
 ### Research Foundation
 

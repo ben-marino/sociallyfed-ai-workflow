@@ -36,19 +36,17 @@ Modern life presents unique challenges: information overload, social media addic
 
 ```
         ┌─────────────────────────────┐
-        │    Served Content           │  ← Top (smallest): Passive scrolling,
-        │  (Passive Consumption)      │     algorithmic feeds (minimise)
+        │    Served Content           │  ← Top (smallest): Minimize
+        │  (Level 1)                  │
         ├─────────────────────────────┤
-        │    Casual Browsing          │
+        │   Connection Building       │
+        │  (Level 2)                  │
         ├─────────────────────────────┤
-        │   Intentional Content       │
-        │  (Purpose-Driven Use)       │
+        │   Integrated Activities     │
+        │  (Level 3)                  │
         ├─────────────────────────────┤
-        │   Content Creation          │
-        │  (Active Engagement)        │
-        ├─────────────────────────────┤
-        │      Deep Focus             │  ← Base (foundation): Mindful, purposeful
-        │  (Mindful Engagement)       │     engagement (maximise)
+        │      Sought Content         │  ← Base (foundation): Maximize
+        │  (Level 4)                  │
         └─────────────────────────────┘
 ```
 

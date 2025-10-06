@@ -241,11 +241,10 @@ Journal entry: {entry_text}
 ```python
 PYRAMID_CATEGORIZATION_PROMPT = """Categorize this activity into the SociallyFed Pyramid:
 
-Level 1 - Deep Focus: Mindful, purposeful, single-tasking activities
-Level 2 - Content Creation: Making, building, sharing, contributing
-Level 3 - Intentional Content: Consciously chosen learning or entertainment
-Level 4 - Casual Browsing: Light engagement, general awareness
-Level 5 - Served Content: Passive consumption, algorithmic feeds
+Level 1 - Served Content: Algorithmic feeds, passive consumption (minimize)
+Level 2 - Connection Building: Building relationships, community engagement
+Level 3 - Integrated Activities: Real-life integrated social media use
+Level 4 - Sought Content: Actively searched, intentional content (maximize)
 
 Consider:
 - User's intent (purposeful vs passive)
@@ -255,7 +254,7 @@ Consider:
 
 Activity: "{activity_description}"
 
-Respond with ONLY a number 1-5.
+Respond with ONLY a number 1-4.
 """
 ```
 
@@ -295,11 +294,10 @@ Return ONLY the JSON array.
 # Test prompt effectiveness
 def test_pyramid_categorization_accuracy():
     test_cases = [
-        ("Spent 2 hours mindlessly scrolling Instagram", 5),
-        ("Wrote a blog post about my Stoic philosophy practice", 2),
-        ("Read philosophy book for deep understanding", 1),
-        ("Quickly checked news headlines over coffee", 4),
-        ("Watched educational YouTube video on programming", 3),
+        ("Spent 2 hours mindlessly scrolling Instagram", 1),
+        ("Joined a local community group on Facebook", 2),
+        ("Used social media to coordinate a real-world event", 3),
+        ("Searched for specific educational content on YouTube", 4),
     ]
     
     prompt_template = PYRAMID_CATEGORIZATION_PROMPT
@@ -447,8 +445,8 @@ Provide implementation specification with example code.
 
 ```python
 # Actual prompts used in production
-CATEGORIZATION_TEST = """Rate this activity 1-5 on the SociallyFed Pyramid:
-1=Deep Focus, 2=Creation, 3=Intentional, 4=Casual, 5=Passive
+CATEGORIZATION_TEST = """Rate this activity 1-4 on the SociallyFed Pyramid:
+1=Served Content, 2=Connection Building, 3=Integrated Activities, 4=Sought Content
 
 "Spent an hour reading philosophy and taking notes"
 
