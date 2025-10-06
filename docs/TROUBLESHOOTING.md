@@ -80,7 +80,7 @@ ls -la scripts/
 
 ### Configuration File Not Found
 
-**Problem:** Scripts can't find configuration
+**Problem:** Scripts can't find the configuration
 
 **Error Message:**
 ```
@@ -103,7 +103,7 @@ echo 'GOOGLE_DRIVE_PATH="$HOME/Google Drive"' > ~/.config/sociallyfed/config.sh
 
 ### Context Not Loading in Claude Code
 
-**Problem:** Claude Code doesn't see project context
+**Problem:** Claude Code doesn't see the project context
 
 **Symptoms:**
 - Claude gives generic responses
@@ -180,7 +180,7 @@ Error: Could not create daily brief
 
 **Error Message:**
 ```
-error: Your local changes would be overwritten by merge
+error: Your local changes would be overwritten by the merge
 ```
 
 **Solutions:**
@@ -212,7 +212,7 @@ error: Your local changes would be overwritten by merge
 
 ### Slow File Access
 
-**Problem:** Google Drive files loading slowly
+**Problem:** Google Drive files are loading slowly
 
 **Solutions:**
 
@@ -347,10 +347,10 @@ Clear description of what's wrong
 2. Step two
 3. ...
 
-## Expected Behavior
+## Expected Behaviour
 What should happen
 
-## Actual Behavior
+## Actual Behaviour
 What actually happens
 
 ## Error Messages
