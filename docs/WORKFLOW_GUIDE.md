@@ -16,7 +16,7 @@
 
 ## Workflow Context: Building SociallyFed
 
-This workflow was specifically designed to build SociallyFed - an AI-assisted personal development application. The meta-irony is fitting: using AI to build an AI-powered personal development tool.
+This workflow was explicitly designed to build SociallyFed - an AI-assisted personal development application. The meta-irony is fitting: using AI to create an AI-powered personal development tool.
 
 ### Why This Workflow Exists
 
@@ -28,7 +28,7 @@ This workflow was specifically designed to build SociallyFed - an AI-assisted pe
 ### Key Workflow Principles Aligned with SociallyFed Values
 
 - **Systematic Approach**: Like SociallyFed uses feedback loops for personal growth, this workflow uses structured AI collaboration
-- **Pattern Recognition**: Senior Claude identifies development patterns, just as SociallyFed helps users identify behavioral patterns
+- **Pattern Recognition**: Senior Claude identifies development patterns, just as SociallyFed helps users identify behavioural patterns
 - **Privacy**: Local development with Google Drive sync mirrors SociallyFed's local LLM approach
 - **Continuous Improvement**: Daily briefs and retrospectives mirror SociallyFed's daily journaling
 
@@ -176,7 +176,7 @@ This script:
 ```
 
 This:
-- Reads latest files from Google Drive
+- Reads the latest files from Google Drive
 - Concatenates relevant context
 - Prepares for Claude Code
 
@@ -196,7 +196,7 @@ Claude Code will:
 
 #### 5. Update Implementation Progress
 
-After each major feature or every 2 hours:
+After each central feature or every 2 hours:
 
 ```bash
 ./scripts/update-implementation.sh
@@ -221,11 +221,11 @@ Test AI features with local LLM:
 # Example test script
 import requests
 
-# Test pyramid categorization
+# Test pyramid categorisation
 response = requests.post('http://localhost:11434/api/generate', 
     json={
         'model': 'llama2',
-        'prompt': 'Categorize this social media behavior...'
+        'prompt': 'Categorise this social media behaviour...'
     }
 )
 ```
@@ -255,7 +255,7 @@ Return to Claude Desktop to:
 
 ### start-dev-session.sh
 
-**Purpose**: Initialize daily development context
+**Purpose**: Initialise daily development context
 
 **Usage**:
 ```bash
@@ -334,13 +334,13 @@ Return to Claude Desktop to:
 ```
 
 **Interactive Process**:
-1. Opens editor for report entry
+1. Opens the editor for report entry
 2. Prompts for:
    - Features implemented
    - Tests written
    - Challenges faced
    - Next steps
-3. Saves timestamped report
+3. Saves a timestamped report
 4. Updates cumulative log
 5. Syncs to Google Drive
 
@@ -355,11 +355,11 @@ Return to Claude Desktop to:
   - Coverage: 87%
 
 ## Challenges
-- Handled edge case where user forgets passphrase
+- Handled edge case where the user forgets the passphrase
 - Added secure key derivation with PBKDF2
 
 ## Next Steps
-- Integrate encryption with journal API
+- Integrate encryption with the journal API
 - Add migration for existing entries
 - Performance test with 1000 entries
 ```
@@ -385,7 +385,7 @@ feat: Add journal entry encryption
 
 - Implemented AES-256-GCM encryption
 - Added secure key derivation
-- Created comprehensive test suite
+- Created a comprehensive test suite
 - Updated API to handle encrypted data
 
 Context: Daily brief 2024-10-28
@@ -410,7 +410,7 @@ Refs: #45, #67
 2. Updates task tracking
 3. Creates tomorrow's setup
 4. Final sync to Google Drive
-5. Optional: Creates PR if feature complete
+5. Optional: Creates PR if feature is complete
 
 ## Context Management
 
@@ -487,12 +487,12 @@ Google Drive/
 - Feature specifications
 - Integration strategies
 - Code review guidance
-- Performance optimization plans
+- Performance optimisation plans
 - Security architecture
 
 **Example Prompts**:
 ```
-"Design the pattern discovery system for SociallyFed that can identify correlations between user behaviors and emotional states."
+"Design the pattern discovery system for SociallyFed that can identify correlations between user behaviours and emotional states."
 
 "Create a specification for the local LLM integration ensuring complete privacy while enabling real-time analysis."
 
@@ -509,13 +509,13 @@ Google Drive/
 - Bug fixes
 - Documentation
 - Refactoring
-- Performance optimization
+- Performance optimisation
 
 **Example Prompts**:
 ```
 "Implement the PatternDiscoveryService following the specification in DEVELOPMENT_PLAN_2024-10-28.md"
 
-"Write comprehensive tests for the JournalEncryption feature ensuring edge cases are covered"
+"Write comprehensive tests for the JournalEncryption feature, ensuring edge cases are covered"
 
 "Refactor the PyramidAnalysis module to improve performance for large datasets"
 ```
@@ -530,7 +530,7 @@ Google Drive/
 
 **Testing Examples**:
 ```python
-# Test pyramid categorization accuracy
+# Test pyramid categorisation accuracy
 def test_pyramid_categorization():
     test_cases = [
         ("Spent 3 hours doom scrolling Twitter", 5),  # Served content
@@ -548,7 +548,7 @@ def test_pyramid_categorization():
 ### 1. Maintain Context Continuity
 
 **Do**:
-- Start each session by reading previous context
+- Start each session by reading the previous context
 - Update context immediately after changes
 - Keep a running log of decisions
 
@@ -560,7 +560,7 @@ def test_pyramid_categorization():
 ### 2. Clear Communication Between AIs
 
 **Do**:
-- Write specifications Claude Code can implement
+- Write specifications, Claude Code can implement
 - Include examples in architectural plans
 - Document assumptions clearly
 
@@ -611,7 +611,7 @@ def test_pyramid_categorization():
 **In Code**:
 ```csharp
 /// <summary>
-/// Analyzes journal entry to detect emotional patterns using local LLM.
+/// Analyses journal entry to detect emotional patterns using local LLM.
 /// Ensures privacy by processing all data locally without external API calls.
 /// </summary>
 /// <param name="entry">The journal entry to analyze</param>
@@ -651,14 +651,14 @@ ls -la ~/Google\ Drive/SociallyFed/Context/daily-briefs/
 
 #### 2. Claude Code Missing Context
 
-**Symptom**: Claude Code doesn't understand requirements
+**Symptom**: Claude Code doesn't understand the requirements
 
 **Solutions**:
 1. Run `provide-context.sh` again
-2. Check DEVELOPMENT_CONTEXT.md includes latest plans
+2. Check DEVELOPMENT_CONTEXT.md includes the latest plans
 3. Explicitly reference files:
    ```
-   Read DEVELOPMENT_PLAN_2024-10-28.md section on "Pattern Discovery" and implement accordingly
+   Read DEVELOPMENT_PLAN_2024-10-28.md section on "Pattern Discovery" and implement accordingly.
    ```
 
 #### 3. Script Permissions
@@ -806,7 +806,7 @@ Weekly assessment:
 ### AI Collaboration Metrics
 
 ```markdown
-## AI Utilization
+## AI Utilisation
 
 ### Senior Claude
 - Architectural decisions: 12
@@ -822,7 +822,7 @@ Weekly assessment:
 
 ### Ollama
 - Test scenarios: 47
-- Patterns analyzed: 1,250
+- Patterns analysed: 1,250
 - Accuracy: 94%
 - Processing time: <2s average
 ```
@@ -898,7 +898,7 @@ Help AIs remember project conventions:
 
 ## Always Remember
 1. Use dependency injection for all services
-2. Follow Repository pattern for data access
+2. Follow the Repository pattern for data access
 3. Use MediatR for command/query separation
 4. All times in UTC
 5. Encrypt sensitive data at rest
@@ -915,7 +915,7 @@ This workflow represents a paradigm shift in software development. By orchestrat
 - **Rapid iteration** without sacrificing stability
 - **Comprehensive documentation** without overhead
 
-The meta-nature of using AI to build an AI-powered application (SociallyFed) demonstrates the potential of AI-augmented development. This isn't about replacing developers - it's about amplifying human creativity and removing repetitive tasks.
+The meta-nature of using AI to build an AI-powered application (SociallyFed) demonstrates the potential of AI-augmented development. This isn't about replacing developers—it's about amplifying human creativity and eliminating repetitive tasks.
 
 As you use this workflow to build your own projects, remember:
 - Context is king - maintain it religiously
