@@ -13,7 +13,7 @@
 
 ## Overview
 
-This guide contains real prompts used in developing SociallyFed, demonstrating how to effectively communicate with each AI in the multi-AI orchestration workflow. These prompts have been refined through actual use and represent patterns that consistently produce high-quality results.
+This guide contains real prompts used in developing SociallyFed. It demonstrates how to effectively communicate with each AI in the multi-AI orchestration workflow. These prompts have been refined through actual use and represent patterns consistently producing high-quality results.
 
 ## Planning Prompts (Senior Claude)
 
@@ -22,7 +22,7 @@ This guide contains real prompts used in developing SociallyFed, demonstrating h
 #### Basic Feature Request
 
 ```markdown
-I need to design the SociallyFed pattern discovery system that analyzes user journal entries to find behavioral and emotional patterns.
+I must design the SociallyFed pattern discovery system that analyses user journal entries to find behavioural and emotional patterns.
 
 Requirements:
 - Identify correlations between activities and emotional states
@@ -72,7 +72,7 @@ Review this implementation report for the SociallyFed pyramid analysis feature:
 
 [Implementation Report Content]
 
-Please analyze:
+Please analyse:
 1. Architectural soundness
 2. Performance implications
 3. Security considerations
@@ -82,14 +82,14 @@ Please analyze:
 
 Focus particularly on:
 - The integration with Ollama for local processing
-- Response time optimization
+- Response time optimisation
 - Caching strategy effectiveness
 ```
 
 ### Problem-Solving Prompts
 
 ```markdown
-We're experiencing performance issues with the pattern discovery algorithm when users have >500 journal entries. Current implementation uses O(n²) correlation checking.
+We're experiencing performance issues with the pattern discovery algorithm when users have more than 500 journal entries. The current implementation uses O(n²) correlation checking.
 
 Current approach:
 - Load all entries into memory
@@ -103,7 +103,7 @@ Constraints:
 - Maintain statistical accuracy
 - Support incremental updates
 
-Design an optimized solution that addresses these performance issues while maintaining accuracy.
+Design an optimised solution that addresses these performance issues while maintaining accuracy.
 ```
 
 ## Implementation Prompts (Claude Code)
@@ -118,7 +118,7 @@ Read DEVELOPMENT_CONTEXT.md and implement the journal entry encryption feature b
 Key requirements:
 - Use AES-256-GCM for encryption
 - Implement key derivation with PBKDF2 (100,000 iterations)
-- Create comprehensive test suite with 85%+ coverage
+- Create a comprehensive test suite with 85%+ coverage
 - Handle edge cases: empty entries, Unicode content, maximum length
 - Add appropriate logging without exposing sensitive data
 
@@ -128,18 +128,18 @@ Start by implementing the encryption service interface, then create the concrete
 #### API Endpoint Creation
 
 ```markdown
-Implement the SociallyFed pyramid analysis API endpoints based on the specification in the context.
+Implement the SociallyFed pyramid analysis API endpoints based on the specification in the Context.
 
 Create these endpoints:
-1. POST /api/pyramid/analyze - Analyze single content item
-2. GET /api/pyramid/user-metrics - Get user's pyramid distribution
-3. GET /api/pyramid/insights - Get personalized recommendations
-4. POST /api/pyramid/batch - Batch analyze multiple items
+1. POST /api/pyramid/analyse - Analyse single content item
+2. GET /api/pyramid/user-metrics - Get the user's pyramid distribution
+3. GET /api/pyramid/insights - Get personalised recommendations
+4. POST /api/pyramid/batch - Batch analyse multiple items
 
 Requirements:
 - Use vertical slice architecture pattern
 - Include input validation with FluentValidation
-- Implement rate limiting (10 requests/minute for analyze)
+- Implement Rate limiting (10 requests/minute for analysis)
 - Add OpenAPI documentation
 - Create integration tests for each endpoint
 - Handle Ollama service unavailability gracefully
@@ -159,7 +159,7 @@ Bug description:
 
 Previous investigation notes:
 - Leak appears to be in the correlation calculation
-- Possibly related to LINQ query materialization
+- Possibly related to LINQ query materialisation
 
 Requirements:
 - Fix the memory leak
@@ -182,7 +182,7 @@ Current issues:
 - Database access mixed with business logic
 
 Refactoring goals:
-- Extract encryption into separate service
+- Extract encryption into a separate service
 - Implement repository pattern for data access
 - Use MediatR for command/query separation
 - Maintain backward compatibility
@@ -209,7 +209,7 @@ Specific scenarios:
 - Exercise frequency impacts mood ratings
 - No patterns exist (random data)
 
-Use the test data factory pattern for generating realistic journal entries.
+Use the test data factory pattern to generate realistic journal entries.
 ```
 
 ## Testing Prompts (Ollama)
@@ -219,7 +219,7 @@ Use the test data factory pattern for generating realistic journal entries.
 #### Sentiment Analysis
 
 ```python
-SENTIMENT_ANALYSIS_PROMPT = """Analyze the emotional content of this journal entry.
+SENTIMENT_ANALYSIS_PROMPT = """ Analyse the emotional content of this journal entry.
 
 Return a JSON object with this exact structure:
 {
@@ -236,15 +236,15 @@ Journal entry: {entry_text}
 """
 ```
 
-#### Pyramid Categorization
+#### Pyramid Categorisation
 
 ```python
-PYRAMID_CATEGORIZATION_PROMPT = """Categorize this activity into the SociallyFed Pyramid:
+PYRAMID_CATEGORIZATION_PROMPT = """ Categorise this activity into the SociallyFed Pyramid:
 
-Level 1 - Served Content: Algorithmic feeds, passive consumption (minimize)
+Level 1 - Served Content: Algorithmic feeds, passive consumption (minimise)
 Level 2 - Connection Building: Building relationships, community engagement
 Level 3 - Integrated Activities: Real-life integrated social media use
-Level 4 - Sought Content: Actively searched, intentional content (maximize)
+Level 4 - Sought Content: Actively searched, intentional content (maximise)
 
 Consider:
 - User's intent (purposeful vs passive)
@@ -261,7 +261,7 @@ Respond with ONLY a number 1-4.
 #### Pattern Detection
 
 ```python
-PATTERN_DETECTION_PROMPT = """Analyze these journal entries for behavioral patterns.
+PATTERN_DETECTION_PROMPT = """Analyse these journal entries for behavioural patterns.
 
 Look for:
 - Repeated themes or topics
@@ -319,9 +319,9 @@ Design a journal entry encryption system for SociallyFed that ensures complete p
 
 Context:
 - Users are privacy-conscious individuals using journaling for personal growth
-- Entries contain sensitive emotional and behavioral data
+- Entries contain sensitive emotional and behavioural data
 - Must work on mobile devices with limited resources
-- Users might forget passwords but need data recovery options
+- Users might forget passwords, but need data recovery options
 
 Requirements:
 1. End-to-end encryption (server never sees plaintext)
@@ -330,7 +330,7 @@ Requirements:
 4. Support for entry sharing with therapists (future feature)
 5. Maintain search functionality on encrypted data
 
-Please provide a complete technical specification including cryptographic approach, key management, and implementation guidance.
+Please provide complete technical specifications, including cryptographic approach, key management, and implementation guidance.
 ```
 
 **Implementation Prompt (Claude Code)**:
@@ -349,7 +349,7 @@ Create:
 2. AesGcmEncryptionService implementation
 3. BiometricKeyManager for mobile platforms
 4. Comprehensive test suite including:
-   - Encryption/decryption round trips
+   - Encryption/decryption round-trip
    - Key derivation consistency
    - Performance benchmarks
    - Edge cases (empty, Unicode, max length)
@@ -364,10 +364,10 @@ Follow SOLID principles and ensure thread safety.
 **Planning Prompt (Senior Claude)**:
 
 ```markdown
-Create a pattern discovery system for SociallyFed that identifies correlations between user behaviors and emotional states.
+Create a pattern discovery system for SociallyFed that identifies correlations between user behaviours and emotional states.
 
 User story:
-"As a user, I want to understand what behaviors affect my mood so I can make informed lifestyle changes."
+"As a user, I want to understand what behaviours affect my mood to make informed lifestyle changes."
 
 Examples of patterns to detect:
 - "Poor sleep on days with >2 hours social media"
@@ -420,7 +420,7 @@ Write tests for statistical accuracy using known datasets.
 Design the integration between SociallyFed and local Ollama LLM for privacy-preserving AI features.
 
 Core features requiring LLM:
-1. Pyramid level categorization of activities
+1. Pyramid level categorisation of activities
 2. Sentiment analysis of journal entries
 3. Theme extraction from text
 4. Pattern description generation
@@ -428,7 +428,7 @@ Core features requiring LLM:
 Constraints:
 - Zero network calls for AI processing
 - <2 second response time per analysis
-- Graceful degradation if LLM unavailable
+- Graceful degradation if LLM is unavailable
 - Consistent results across devices
 
 Architecture requirements:
@@ -445,14 +445,14 @@ Provide implementation specification with example code.
 
 ```python
 # Actual prompts used in production
-CATEGORIZATION_TEST = """Rate this activity 1-4 on the SociallyFed Pyramid:
+CATEGORIZATION_TEST = """ Rate this activity 1-4 on the SociallyFed Pyramid:
 1=Served Content, 2=Connection Building, 3=Integrated Activities, 4=Sought Content
 
 "Spent an hour reading philosophy and taking notes"
 
 Answer with only the number."""
 
-SENTIMENT_TEST = """Analyze emotions in: "Today was rough. Work was overwhelming and I couldn't focus. Ended up scrolling social media for hours which made me feel worse."
+SENTIMENT_TEST = """ Analyse emotions in: "Today was rough. Work was overwhelming, and I couldn't focus. Ended up scrolling social media for hours, which made me feel worse."
 
 Return JSON:
 {"primary": "emotion", "intensity": 0.0-1.0, "valence": -1.0 to 1.0}"""
@@ -468,7 +468,7 @@ Create a notification service for SociallyFed with these requirements:
 
 Functional Requirements:
 1. Push notifications for pattern discoveries
-2. Daily journal reminders (customizable time)
+2. Daily journal reminders (customisable time)
 3. Weekly progress summaries
 4. Achievement celebrations
 
@@ -496,7 +496,7 @@ I need notifications for the app. Should work on phones and not be annoying. Mak
 ```markdown
 Context: SociallyFed uses local Ollama for AI processing to maintain privacy. Current response time is 3s average, target is <2s.
 
-Task: Optimize the prompt processing pipeline.
+Task: Optimise the prompt processing pipeline.
 
 Current implementation:
 [Include relevant code]
@@ -506,14 +506,14 @@ Bottlenecks identified:
 - HTTP call to Ollama: 2.2s
 - Response parsing: 0.3s
 
-Optimize while maintaining accuracy.
+Optimise while maintaining accuracy.
 ```
 
 ### 3. Specificity in Requirements
 
 **Specific Requirements**:
 ```markdown
-Implement rate limiting for the pyramid analysis API:
+Implement Rate limiting for the pyramid analysis API:
 - 10 requests per minute per user
 - 100 requests per hour per user
 - Return 429 with Retry-After header
@@ -550,7 +550,7 @@ Create 50 entries representing 30 days of journaling for a user experiencing gra
 
 ### Issue: AI Not Understanding Requirements
 
-**Problem**: Claude Code implements something different than specified
+**Problem**: Claude Code implements something different from what was specified
 
 **Solution**: Use the sandwich approach:
 ```markdown
@@ -574,7 +574,7 @@ IMPORTANT:
 - No custom crypto implementation
 - Standard JWT tokens
 - Minimal abstraction layers
-- Follow YAGNI principle
+- Follow the YAGNI principle
 ```
 
 ### Issue: Missing Edge Cases
@@ -592,7 +592,7 @@ Edge cases to handle:
 - Unicode (emoji, non-Latin scripts)
 - Very long queries (>1000 chars)
 - Null or undefined inputs
-- Concurrent searches by same user
+- Concurrent searches by the same user
 ```
 
 ### Issue: Inconsistent Code Style
@@ -660,7 +660,7 @@ Approach B: Nightly batch analysis
 - Pros: Efficient, can use more complex algorithms
 - Cons: Delayed insights, scheduling complexity
 
-Recommend the best approach for SociallyFed's use case considering mobile battery life and user engagement patterns.
+Recommend the best approach for SociallyFed's use case, considering mobile battery life and user engagement patterns.
 ```
 
 ### 3. Scenario-Based Prompts
@@ -669,9 +669,9 @@ Recommend the best approach for SociallyFed's use case considering mobile batter
 Walk through this user scenario and identify required implementations:
 
 Scenario: 
-1. User opens app after 3 days offline
+1. User opens the app after 3 days offline
 2. Has written 10 journal entries locally
-3. Connects to internet
+3. Connects to the internet
 4. App needs to sync entries
 5. Run analysis on new entries
 6. Merge with existing patterns
@@ -697,7 +697,7 @@ Provide architecture addressing each constraint.
 ### 5. Test-Driven Prompt Development
 
 ```markdown
-Here are the tests that must pass:
+Here are the tests that must be passed:
 
 ```csharp
 [Fact]
@@ -710,7 +710,7 @@ public async Task Encryption_DifferentKeys_CannotDecrypt()
 public async Task Encryption_Performance_Under100ms()
 ```
 
-Implement the EncryptionService to make these tests pass.
+Implement the EncryptionService to pass these tests.
 ```
 
 ## Prompt Library
@@ -795,10 +795,10 @@ Check for:
 
 Track these metrics:
 
-1. **First-Time Success Rate**: Did the AI understand and complete the task correctly on first attempt?
+1. **First-Time Success Rate**: Did the AI correctly understand and complete the task on the first attempt?
 2. **Revision Rounds**: How many clarifications were needed?
 3. **Output Quality**: Does the code meet standards without modification?
-4. **Time to Completion**: How long from prompt to acceptable output?
+4. **Time to Completion**: How long is the process from prompt to acceptable output?
 5. **Edge Case Coverage**: Were edge cases handled without prompting?
 
 ## Conclusion
@@ -811,7 +811,7 @@ Effective prompting is a skill that improves with practice. The examples in this
 4. **Iterate**: Refine prompts based on results
 5. **Document Success**: Keep prompts that work well for reuse
 
-As you develop your own projects using this workflow, build your own prompt library. What works best can vary by project, team, and AI model version.
+Build your prompt library as you develop your projects using this workflow. What works best can vary by project, team, and AI model version.
 
 ---
 
