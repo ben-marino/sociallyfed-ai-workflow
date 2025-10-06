@@ -849,10 +849,10 @@ sequenceDiagram
   - [ ] Visualisations
 
 ### Planned 📋
-- [ ] Beta testing program (Q2 2025)
-- [ ] Community features (Q3 2025)
-- [ ] Advanced analytics (Q3 2025)
-- [ ] Public launch (Q4 2025)
+- [ ] Beta testing program (Q3 2025)
+- [ ] Community features (Q4 2025)
+- [ ] Advanced analytics (Q4 2025)
+- [ ] Public launch (Q1 2026)
 - [ ] Open source release (2026)
 
 ## Learn More
