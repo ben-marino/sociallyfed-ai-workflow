@@ -34,15 +34,15 @@ The Stoic philosophy provides timeless wisdom for personal development:
 
 ### 2. Cybernetic Psychology: Feedback Loops and Self-Regulation
 
-Based on Norbert Wiener's cybernetics and modern behavioral psychology:
+Based on Norbert Wiener's cybernetics and modern behavioural psychology:
 
 - **T.O.T.E. Model** (Test-Operate-Test-Exit): Continuous cycles of:
   1. Test: Compare current state to desired state
   2. Operate: Take action to reduce discrepancy
   3. Test: Re-evaluate progress
-  4. Exit: When goal achieved, or adjust and repeat
+  4. Exit: When the goal is achieved, or adjust and repeat
 - **Continuous Monitoring**: Like a thermostat maintaining temperature, we maintain desired psychological states
-- **Goal-Directed Behavior**: Clear standards, observation, feedback, adjustment
+- **Goal-Directed Behaviour**: Clear standards, observation, feedback, adjustment
 - **Multiple Loop Levels**:
   - *Micro-loops*: Moment-to-moment awareness
   - *Daily loops*: Morning intention → day's actions → evening reflection
@@ -55,10 +55,10 @@ Modern research on digital wellness informs our approach:
 
 - **The SociallyFed Pyramid**: Framework for healthy digital consumption (detailed below)
 - **Active vs. Passive Use**: Research shows:
-  - Passive consumption (scrolling, watching) correlates with loneliness, envy, decreased wellbeing
-  - Active engagement (creating, meaningful interaction) correlates with connection, creativity, satisfaction
+  - Passive consumption (scrolling, watching) correlates with loneliness, envy, and decreased well-being
+  - Active engagement (creating meaningful interaction) correlates with connection, creativity, and satisfaction
 - **Algorithmic Literacy**: Understanding how recommendation systems shape our information diet
-- **Pattern Awareness**: Recognizing personal triggers and responses in digital environments
+- **Pattern Awareness**: Recognising personal triggers and responses in digital environments
 
 ## The SociallyFed Pyramid
 
@@ -66,7 +66,7 @@ The SociallyFed Pyramid reimagines our relationship with digital media, similar 
 
 ```
         ┌─────────────────────────────┐
-        │    Served Content           │  ← Top (smallest): Minimize
+        │    Served Content           │  ← Top (smallest): Minimise
         │  (Level 1)                  │
         ├─────────────────────────────┤
         │   Connection Building       │
@@ -75,25 +75,25 @@ The SociallyFed Pyramid reimagines our relationship with digital media, similar 
         │   Integrated Activities     │
         │  (Level 3)                  │
         ├─────────────────────────────┤
-        │      Sought Content         │  ← Base (foundation): Maximize
+        │      Sought Content         │  ← Base (foundation): Maximise
         │  (Level 4)                  │
         └─────────────────────────────┘
 ```
 
 ### Pyramid Levels Explained
 
-1. **Served Content (Top - Minimize)**:
+1. **Served Content (Top - Minimise)**:
    - At the tip of the pyramid, like sugar or addictive content in the food pyramid, this should ideally form a small part of Social Media consumption
-   - Studies indicate 'Passive' usage is associated with loneliness and disconnection which is 'served-content' provided by an algorithm
-   - Drawing the parallel that 'Served-content' is much like ultra-processed foods that provide a potentially addictive short-lived high
-   - Users could live on this algorithmically driven 'Served-content' but at a cost to their wellbeing
+   - Studies indicate 'Passive' usage is associated with loneliness and disconnection, which is 'served-content' provided by an algorithm
+   - Drawing the parallel that 'Served-content' is much like ultra-processed foods that provide a potentially addictive, short-lived high
+   - Users could live on this algorithmically driven 'Served-content', but at a cost to their well-being
    - Examples: "For You" pages, suggested posts and recommendations, auto-playing videos, algorithmic feeds, endless scroll features
    - Research Impact: Passive consumption of algorithm-served content is associated with increased feelings of loneliness and disconnection; 12.5% of people who were losing sleep reported experiencing hostile abuse
 
 2. **Connection Building**:
    - The second layer involves using social media to build and maintain meaningful relationships and communities
    - This represents the social capital aspect of platforms
-   - The study "Benefits of Facebook 'friends' social capital and college students' use of online social network sites" demonstrated that Facebook was strongest with bridging capital and gives evidence suggesting it provides greater benefits to users suffering with depression and low life satisfaction
+   - The study "Benefits of Facebook 'friends' social capital and college students' use of online social network sites" demonstrated that Facebook was strongest with bridging capital and gives evidence suggesting it provides greater benefits to users suffering from depression and low life satisfaction
    - Examples: Joining interest-based groups, engaging in meaningful discussions, building professional networks, maintaining friendships, supporting others seeking help
    - Research Impact: 50% of 'Active' users reported having a community that they value online that supports them; 58% had received support or connection after seeking help; 48% had an online community that values and supports them
 
@@ -101,16 +101,16 @@ The SociallyFed Pyramid reimagines our relationship with digital media, similar 
    - This level represents social media use that integrates with and enhances real-life activities and goals
    - The platform sustains an activity rather than replacing it
    - The study "Development and validation of a social media use integration scale" demonstrated the benefits of social media when integrated into other activities and life
-   - This can help develop a support network and prevents someone becoming emotionally attached to the platform itself
+   - This can help develop a support network and prevent someone from becoming emotionally attached to the platform itself
    - Examples: Coordinating real-world events, learning new skills through tutorials, supporting hobbies and interests, professional development, fundraising for causes, sports and fitness tracking
    - Research Impact: Almost 40% of survey respondents had integrated activities on all key components; Users who integrated social media with real-life activities showed significantly higher life satisfaction scores
 
-4. **Sought Content (Foundation - Maximize)**:
+4. **Sought Content (Foundation - Maximise)**:
    - Forming the foundation of healthy social media use, this represents content you actively seek out with intention and purpose
    - This is 'Active' usage associated with positive outcomes
-   - The research "Toward an Integrated and Differential Approach to the Relationships Between Loneliness, Different Types of Facebook Use, and Adolescents Depressed Mood" profiled that active users got better over time as opposed to passive users
+   - The research "Toward an Integrated and Differential Approach to the Relationships Between Loneliness, Different Types of Facebook Use, and Adolescents' Depressed Mood" profiled that active users got better over time as opposed to passive users
    - Active usage of 'Sought Content' and posting is associated with positive outcomes
-   - Examples: Searching for specific information, following curated educational content, creating and sharing meaningful content, engaging with chosen communities, having meaningful conversations
+   - Examples: Searching for specific information, following curated educational content, creating and sharing meaningful content, engaging with chosen communities, and having meaningful conversations
    - Research Impact: 73.5% of respondents had found positive or helpful content; Active usage predicts subjective well-being by creating social capital and stimulating feelings of social connectedness; Those who used the platform in an 'active' manner got better over time
 
 ### Research Foundation
@@ -118,14 +118,14 @@ The SociallyFed Pyramid reimagines our relationship with digital media, similar 
 Studies consistently show:
 - Passive social media use correlates with increased depression and anxiety (Hunt et al., 2018)
 - Active use (posting, direct messaging) has neutral or positive effects (Verduyn et al., 2017)
-- Algorithmic feeds designed for engagement often promote outrage and polarization (Brady et al., 2021)
-- Mindful technology use improves wellbeing (Lim & Bentley, 2019)
+- Algorithmic feeds designed for engagement often promote outrage and polarisation (Brady et al., 2021)
+- Mindful technology use improves well-being (Lim & Bentley, 2019)
 
 ## Core Features
 
 ### 1. AI-Powered Journaling System
 
-Our journaling system goes beyond simple prompts to create a personalized growth experience:
+Our journaling system goes beyond simple prompts to create a personalised growth experience:
 
 #### Prompt Taxonomy
 
@@ -144,17 +144,17 @@ Eight carefully designed categories address all aspects of personal development:
 3. **Cognitive Reframing and Mindset**
    - "Take a challenge from today and write three different interpretations of it"
    - "What story are you telling yourself about this situation? Is it helpful?"
-   - "How would you advise a good friend facing this exact situation?"
+   - "How would you advise a good friend facing this situation?"
 
 4. **Gratitude and Positivity**
    - "What three small things brought you joy today that you might usually overlook?"
-   - "Who in your life deserves appreciation that you haven't expressed?"
+   - "Who in your life deserves appreciation you haven't expressed?"
    - "What challenge from the past are you now grateful for?"
 
 5. **Habits and Behaviors**
    - "Which habits served you well today? Which held you back?"
    - "What pattern do you notice in your daily routines?"
-   - "Design tomorrow's keystone habit - one that will trigger other positive behaviors"
+   - "Design tomorrow's keystone habit - one that will trigger other positive behaviours"
 
 6. **Social and Relationships**
    - "How did you contribute to someone else's day?"
@@ -163,7 +163,7 @@ Eight carefully designed categories address all aspects of personal development:
 
 7. **Media and Information Diet**
    - "Track your pyramid: How much time at each level today?"
-   - "What content left you feeling energized vs. drained?"
+   - "What content left you feeling energised vs. drained?"
    - "When did algorithms choose for you vs. you choosing consciously?"
 
 8. **Progress and Planning**
@@ -190,14 +190,14 @@ The AI adapts prompts based on your journey phase:
 **Phase 3: Deep Dive (Weeks 13-24)**
 - Focus: Understanding root causes and complex patterns
 - Prompts explore childhood influences, core beliefs
-- Connecting present behaviors to past experiences
+- Connecting present behaviours to past experiences
 - Advanced Stoic exercises
 
 **Phase 4: Maintenance (Ongoing)**
 - Focus: Sustained growth and new challenges
 - Prompts prevent stagnation
 - Celebrating progress while seeking new edges
-- Becoming mentor to others on journey
+- Becoming a mentor to others on the journey
 
 #### AI Features
 
@@ -209,7 +209,7 @@ The AI adapts prompts based on your journey phase:
 
 ### 2. Personal Pattern Discovery
 
-The AI analyzes your journal entries and behavioral data to surface insights:
+The AI analyses your journal entries and behavioural data to surface insights:
 
 #### What Gets Tracked
 
@@ -222,7 +222,7 @@ The AI analyzes your journal entries and behavioral data to surface insights:
 **Behavioral Patterns**:
 - Daily routines and their outcomes
 - Habit chains and dependencies
-- Energy levels throughout day
+- Energy levels throughout the day
 - Decision-making tendencies
 
 **Media Consumption Patterns**:
@@ -240,15 +240,15 @@ The AI analyzes your journal entries and behavioral data to surface insights:
 #### How Pattern Discovery Works
 
 1. **Natural Language Processing**
-   - Extracts entities, emotions, actions from journal text
+   - Extracts entities, emotions, and actions from journal text
    - Identifies temporal markers ("after", "whenever", "usually")
-   - Categorizes content themes
+   - Categorises content themes
 
 2. **Statistical Analysis**
    - Correlation coefficients between variables
    - Time-series analysis for cyclical patterns
    - Anomaly detection for unusual days
-   - Predictive modeling for future states
+   - Predictive modelling for future states
 
 3. **Hypothesis Generation**
    - AI proposes potential patterns: "You tend to scroll social media more on days with work conflicts"
@@ -269,15 +269,15 @@ The AI analyzes your journal entries and behavioral data to surface insights:
 
 ### 3. Cybernetic Self-Regulation
 
-Continuous feedback loops drive behavior change:
+Continuous feedback loops drive behaviour change:
 
 #### Daily Micro-Loops
 
 **Morning (Test)**:
 1. Review yesterday's reflection
-2. Set specific intention for the day
+2. Set a specific intention for the day
 3. Identify potential obstacles
-4. Choose focus virtue/value
+4. Choose a focus virtue/value
 
 **During Day (Operate)**:
 - Real-time check-ins via mobile notifications
@@ -308,7 +308,7 @@ Continuous feedback loops drive behavior change:
 - Mid-week course correction
 - Energy and momentum assessment
 - Adjust weekly plan if needed
-- Prevent week from derailing
+- Prevent the week from derailing
 
 **Saturday Reflection**:
 - Comprehensive week review
@@ -319,22 +319,22 @@ Continuous feedback loops drive behavior change:
 #### Long-Term Adaptation
 
 **Monthly Evolution**:
-- Deep dive into month's data
+- Deep dive into the month's data
 - Major pattern identification
 - Strategy effectiveness review
 - Adjust approach based on results
 
 **Quarterly Transformation**:
 - Compare to baseline from 3 months ago
-- Update goals and values if evolved
+- Update goals and values if they have evolved
 - Graduate to new growth edges
-- Share insights with community
+- Share insights with the community
 
 **Annual Milestone**:
 - Full journey retrospective
 - Transformation documentation
 - Wisdom synthesis
-- Becoming guide for others
+- Becoming a guide for others
 
 ### 4. Privacy-First Architecture
 
@@ -378,12 +378,12 @@ Quantify your development journey:
 
 **Emotion Identification Frequency**:
 - Emotional vocabulary expansion
-- Accuracy in labeling feelings
+- Accuracy in labelling feelings
 - Granularity of emotional descriptions
 - Body awareness integration
 
 **Pattern Acknowledgment**:
-- Speed of recognizing repeated behaviors
+- Speed of recognising repeated behaviours
 - Acceptance vs. resistance to patterns
 - Self-compassion in observations
 - Action taken on insights
@@ -406,7 +406,7 @@ Quantify your development journey:
 - Percentage of successful perspective shifts
 - Speed of reframing
 - Quality of alternative interpretations
-- Real-world behavior change
+- Real-world behaviour change
 
 #### Values Alignment Metrics
 
@@ -426,7 +426,7 @@ Quantify your development journey:
 
 **Pyramid Distribution**:
 - Hours per day at each level
-- Trend toward healthier base
+- Trend toward a healthier base
 - Reduction in "served content"
 - Increase in creation/deep focus
 
@@ -451,7 +451,7 @@ Quantify your development journey:
 │           Mobile Client (Flutter)                │
 │                                                  │
 │  • Journal Entry UI with rich text editor       │
-│  • Pyramid visualization dashboard              │
+│  • Pyramid visualisation dashboard              │
 │  • Pattern discovery insights                   │
 │  • Privacy controls and settings                │
 │  • Local SQLite for offline-first               │
@@ -490,7 +490,7 @@ Quantify your development journey:
 ┌─────────────────────────────────────────────────┐
 │      Local LLM Service (Python + Ollama)        │
 │                                                  │
-│  • Content categorization (Pyramid levels)      │
+│  • Content categorisation (Pyramid levels)      │
 │  • Sentiment analysis & emotion detection       │
 │  • Topic extraction & theme identification      │
 │  • Pattern correlation algorithms               │
@@ -580,7 +580,7 @@ sequenceDiagram
     
     LLM->>LLM: Extract text features
     LLM->>LLM: Categorize (pyramid level)
-    LLM->>LLM: Analyze sentiment
+    LLM->>LLM: Analyse sentiment
     LLM->>LLM: Extract topics & themes
     LLM->>LLM: Check for patterns
     LLM->>API: Return analysis results
@@ -595,7 +595,7 @@ sequenceDiagram
     API->>Cache: Check for cached result
     API->>DB: Fetch if not cached
     API-->>Mobile: Pattern insights
-    Mobile->>User: Display visualizations
+    Mobile->>User: Display visualisations
 ```
 
 #### Privacy-Preserving Sync
@@ -695,7 +695,7 @@ sequenceDiagram
   - "Your mood improves after morning journaling"
   - "Late-night scrolling correlates with poor sleep"
 - User validates or rejects patterns
-- Personalization begins
+- Personalisation begins
 
 **Habit Formation**
 - Morning intention-setting becomes routine
@@ -717,17 +717,17 @@ sequenceDiagram
 
 **Breakthrough Moments**
 - Major pattern discovered: "Social media envy → comparison → work anxiety"
-- Successful reframing during stressful event
-- First week with pyramid properly balanced
+- Successful reframing during a stressful event
+- First week with the pyramid properly balanced
 - Relationships improve from increased presence
 
 ### Month 4+: Integration and Growth
 
 **New Normal**
-- Healthy habits now automatic
+- Healthy habits are now automatic
 - Self-awareness becomes default
 - Quick recovery from setbacks
-- Helping others on journey
+- Helping others on the journey
 
 **Continuous Evolution**
 - Advanced prompts unlock
@@ -758,7 +758,7 @@ sequenceDiagram
 
 ### vs. Mood Tracking Apps
 
-- **Beyond Numbers**: Rich journal entries provide context mood trackers miss
+- **Beyond Numbers**: Rich journal entries provide context that mood trackers miss
 - **Root Cause Analysis**: Understand why, not just what
 - **Action-Oriented**: Every insight leads to actionable steps
 - **Holistic Approach**: Integrates all life aspects, not just mood
@@ -769,7 +769,7 @@ sequenceDiagram
 - **Quality over Quantity**: Not just reducing time, but improving how you engage
 - **Educational Approach**: Understand the psychology behind your habits
 - **Positive Framework**: Focus on building good habits, not just breaking bad ones
-- **Comprehensive Solution**: Addresses underlying needs social media fills
+- **Comprehensive Solution**: Addresses the underlying needs that social media fills
 - **Personal Growth Focus**: Media diet as part of larger development journey
 
 ### vs. AI Therapy Chatbots
@@ -778,7 +778,7 @@ sequenceDiagram
 - **Privacy Guaranteed**: Local processing, no data mining
 - **Progress Tracking**: Measurable outcomes over time
 - **Evidence-Based**: Grounded in research and philosophy
-- **Complement to Therapy**: Tool for growth, not replacement for professional help
+- **Complement to Therapy**: Tool for growth, not a replacement for professional help
 
 ## Impact Vision
 
@@ -796,19 +796,19 @@ sequenceDiagram
 - Build resilience and adaptability
 - Create meaningful relationships
 - Find purpose and direction
-- Achieve sustainable wellbeing
+- Achieve sustainable well-being
 
 ### Societal Level
 
 **Cultural Shift**:
-- Normalize reflective practices
+- Normalise reflective practices
 - Reduce social media addiction
 - Increase emotional intelligence
 - Promote mindful technology use
 - Build more conscious communities
 
 **Research Contribution**:
-- Open dataset (anonymized) for researchers
+- Open dataset (anonymised) for researchers
 - Published studies on AI-assisted growth
 - Best practices for privacy-first AI
 - Framework for digital wellness
@@ -816,8 +816,8 @@ sequenceDiagram
 
 **Next Generation**:
 - Children grow up with healthy tech habits
-- Mental health destigmatized
-- Self-awareness as core life skill
+- Mental health destigmatised
+- Self-awareness as a core life skill
 - Technology serves human flourishing
 - Wisdom traditions meet modern tools
 
@@ -846,7 +846,7 @@ sequenceDiagram
   - [x] Project structure
   - [x] Authentication flow
   - [ ] Journal UI
-  - [ ] Visualizations
+  - [ ] Visualisations
 
 ### Planned 📋
 - [ ] Beta testing program (Q2 2025)
