@@ -18,7 +18,7 @@ Before you begin, ensure you have:
 # Clone the repository
 git clone https://github.com/BennyGaming635/sociallyfed-ai-workflow.git
 
-# Navigate into directory
+# Navigate into the directory
 cd sociallyfed-ai-workflow
 
 # Verify you have the files
@@ -298,7 +298,7 @@ Now that you've completed your first session:
 
 ### Practice
 - 🎯 Do another sprint with a real task
-- 📝 Customize prompts for your project
+- 📝 Customise prompts for your project
 - 🔧 Adapt scripts to your workflow
 - 📊 Track your progress over time
 
@@ -313,7 +313,7 @@ Now that you've completed your first session:
 ### ✅ Do's
 - **Start small** - Don't tackle everything at once
 - **Be specific** - Vague prompts get vague results
-- **Review code** - Don't blindly accept AI suggestions
+- **Review code** - Don't unquestioningly accept AI suggestions
 - **Iterate** - Multiple small sprints beat one marathon
 - **Document** - Update docs as you go
 - **Commit often** - Smaller commits are easier to track
@@ -331,7 +331,7 @@ Now that you've completed your first session:
 A: Yes! Adapt to your schedule. The structure matters more than exact timing.
 
 **Q: What if Claude doesn't understand my context?**  
-A: Simplify it. Start with high-level overview, then drill into specifics.
+A: Simplify it. Start with a high-level overview, then drill into specifics.
 
 **Q: Do I need to use both Chat and Code?**  
 A: No, but it's recommended. You can use just Code for simple tasks.
