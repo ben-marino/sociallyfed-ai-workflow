@@ -24,7 +24,7 @@ A systematic approach to building complex applications using AI assistance throu
 
 - Solo developers building complex applications
 - Teams exploring AI-assisted development methodologies
-- Anyone wanting to systematically integrate AI into their development process
+- Anyone wanting to integrate AI into their development process systematically
 - Developers looking for proven AI collaboration patterns
 
 ### What makes this different from just using AI to code?
@@ -96,7 +96,7 @@ You can adapt to:
 - **Dropbox:** Change `GOOGLE_DRIVE_PATH` to Dropbox folder
 - **OneDrive:** Same approach
 - **Local only:** Store in home directory (lose sync benefits)
-- **Git only:** Possible but loses the multi-machine sync advantage
+- **Git only:** Possible, but loses the multi-machine sync advantage
 
 ---
 
@@ -120,7 +120,7 @@ A focused development session with this structure:
 **Benefits of 60-minute sprints:**
 - ✅ Maintains focus and energy
 - ✅ Prevents burnout
-- ✅ Forces prioritization
+- ✅ Forces prioritisation
 - ✅ Fits into busy schedules
 - ✅ Creates natural break points
 - ✅ Measurable progress
@@ -133,7 +133,7 @@ Inspired by Pomodoro but adapted for development.
 - Breaking into multiple one-hour sprints
 - Taking 10-15 min breaks between sprints
 - Running `end-dev-session.sh` between sprints
-- Starting fresh brief for each sprint
+- Starting a fresh brief for each sprint
 
 Quality often decreases after 60-90 minutes.
 
@@ -152,7 +152,7 @@ Complex features span multiple sprints.
 
 **No, it's flexible:**
 - Adjust phase lengths to your needs
-- Skip strategic planning if task is straightforward
+- Skip strategic planning if the task is straightforward
 - Spend more time on implementation
 - Adapt to your workflow
 
@@ -190,7 +190,7 @@ It's like architect (Chat) + builder (Code).
 2. Store in Google Drive
 3. Reference in Claude Chat
 4. Provide to Claude Code
-5. Both AIs see same information
+5. Both AIs see the same information
 
 ```
 You → Daily Brief → Claude Chat (strategy)
@@ -205,12 +205,12 @@ You → Daily Brief → Claude Chat (strategy)
 **Common causes:**
 - Long conversation (hit token limit)
 - Switched to new chat/project
-- Didn't provide context file
+- Didn't provide a context file
 
 **Solutions:**
 - Re-run `provide-context.sh`
 - Reference specific parts of context explicitly
-- Start new chat with fresh context provision
+- Start a new chat with fresh context provision
 - Keep prompts focused
 
 ### Can I use this without Claude Pro?
@@ -292,12 +292,12 @@ Google Drive/
 
 6. **`end-dev-session.sh`**
    - Archives daily brief
-   - Saves implementation report
+   - Saves the implementation report
    - Prepares for next session
 
 ### Can I modify the scripts?
 
-**Absolutely!** They're yours to customize:
+**Absolutely!** They're yours to customise:
 
 - Add your own automation
 - Integrate different tools
@@ -315,10 +315,10 @@ Just keep them in Git so you can track changes.
 # Install WSL
 wsl --install
 
-# Then use workflow in WSL
+# Then use the workflow in WSL
 ```
 
-Native Windows batch/PowerShell versions not currently available but could be contributed.
+Native Windows batch/PowerShell versions are unavailable, but could be contributed.
 
 ### Do I need a GitHub account?
 
@@ -371,7 +371,7 @@ git pull origin main
 git push origin main
 ```
 
-### Daily brief not generating
+### Daily brief is not generating
 
 1. Check `GOOGLE_DRIVE_PATH` in config
 2. Verify directory exists
